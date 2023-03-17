@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class AprendendoJava 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+        
+        // Perguntar informações pessoais
+        System.out.print("Qual é o seu nome? ");
+        String nome = input.nextLine();
+        
+        System.out.print("Qual é a sua idade? ");
+        int idade = input.nextInt();
+        
+        System.out.print("Qual linguagem de programação você está aprendendo? ");
+        String linguagem = input.next();
+        
+        // Mostrar informações pessoais na tela
+        System.out.println("\n--- Informações Pessoais ---");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Linguagem de programação que está estudando: " + linguagem);
+    }
+}
